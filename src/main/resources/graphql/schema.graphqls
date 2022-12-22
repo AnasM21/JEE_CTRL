@@ -1,0 +1,35 @@
+type Query {
+    getmatch(id:ID):Matche
+}
+type Mutation{
+    addmatch(m:Match):String
+    buytickets(id : Int) : String
+    updateticketes(id : Int,t :Ticket ) : String
+    testupdateticketes(id : Int,i : Int) : String
+
+}
+input Match{
+    ref:String,
+    date:String,
+    lieu:String,
+    FirstTeam: String,
+    SecondTeam: String,
+
+}
+input Ticket{
+    ref:String,
+    price:Float,
+    status:String,
+
+}
+
+type Matche{
+
+    id:ID,
+    ref:String,
+    date:String ,#JJ/MM/AAAA
+    lieu:String ,
+    FirstTeam: String,
+    SecondTeam: String,
+
+}

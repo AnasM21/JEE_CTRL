@@ -33,7 +33,11 @@ public class MatchController {
         return iTicket.buyTicket(id);
     }
     @MutationMapping
-    String updatetickets(@Argument Long id, @Argument Ticket t){
+    String testbuyTicket(@Argument Long id,@Argument int i){
+        return iTicket.testbuyTicket(id,i);
+    }
+    @MutationMapping
+    String updateTicket(@Argument Long id, @Argument Ticket t){
     return iTicket.updateTicket(id,t);
     }
     @MutationMapping

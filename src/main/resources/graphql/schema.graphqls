@@ -4,8 +4,9 @@ type Query {
 type Mutation{
     addmatch(m:Match):String
     buytickets(id : Int) : String
-    updateticketes(id : Int,t :Ticket ) : String
+    updateTicket(id : Int,t :Ticket ) : String
     testupdateticketes(id : Int,i : Int) : String
+    testbuyTicket(id:Int,i:Int): String
 
 }
 input Match{
@@ -22,6 +23,13 @@ input Ticket{
     status:String,
 
 }
+type Tickete{
+    ref:String,
+    price:Float,
+    status:String,
+
+}
+
 
 type Matche{
 
@@ -31,5 +39,6 @@ type Matche{
     lieu:String ,
     FirstTeam: String,
     SecondTeam: String,
+    ticket:[Tickete]
 
 }

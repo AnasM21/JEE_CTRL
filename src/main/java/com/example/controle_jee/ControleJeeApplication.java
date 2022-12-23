@@ -27,7 +27,7 @@ public class ControleJeeApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        /*for (int i = 0; i < 2; i++) {
+        /*for (int i = 0; i < 2023; i++) {
            matchRepo.save(new Match(i,"A123456789"+i,new Date(),"casa","a","b",null));
 
 

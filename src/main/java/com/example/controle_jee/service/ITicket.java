@@ -7,4 +7,6 @@ public interface ITicket {
     public String testbuyTicket(Long id,int i);
 
     public String updateTicket(Long id, Ticket ticket);
+
+
 }
